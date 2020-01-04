@@ -1,0 +1,14 @@
+language: php
+
+php:
+  - '7.4'
+
+sudo: false
+
+matrix:
+  fast_finish: true
+
+script: vendor/bin/phpunit
+
+before_script:
+  - composer install
